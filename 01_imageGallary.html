@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallary</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      header,
+      footer {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        padding: 40px;
+        transition: transform 0.5s ease;
+      }
+      .images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        justify-content:center;
+        padding: 30px 30px;
+      }
+      .images img {
+        width: 280px;
+        height: 280px;
+        margin: 30px;
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px black;
+        transition: transform 0.5s ease-in-out;
+      }
+      .images img:hover {
+        /* padding: 10px; */
+        transform: scale(1.2);
+        box-shadow: 9px 12px 20px black;
+      }
+      header:hover {
+        color: aqua;
+        /* border: 2px solid black; */
+        background-color: black;
+        transform: scale(1.2);
+      }
+    </style>
+    <header>
+      <h1>Image Gallary</h1>
+    </header>
+    <hr width="100%" size="6px" color="grey" />
+    <div class="images">
+      <img src="bird_images/b1.jpg" alt="img1" />
+      <img src="bird_images/b2.webp" alt="img2" />
+      <img src="bird_images/b3.webp" alt="img3" />
+      <img src="bird_images/b4.jpg" alt="img4" />
+      <img src="bird_images/b5.jpg" alt="img5" />
+      <img src="bird_images/b6.jpg" alt="img6" />
+      <img src="bird_images/b7.jpg" alt="img7" />
+      <img src="bird_images/b8.jpg" alt="img8" />
+      <img src="bird_images/b9.jpg" alt="img9" />
+      <img src="bird_images/b10.jpg" alt="img10" />
+    </div>
+    <hr width="100%" color="grey" size="6px" />
+    <footer>
+      <h3>copyright &COPY;2024 Image Gallary</h3>
+    </footer>
+  </body>
+</html>
